@@ -11,8 +11,8 @@
     <nav></nav>
     <section class="project_intro row container">
         <div class="brief">
-            <h1>Project Title Here</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sapiente odit sint, itaque vitae consectetur commodi voluptates vel inventore saepe, odio magnam illum voluptatem at totam labore cum pariatur! Autem maxime ea non natus blanditiis quisquam est minus. Earum sunt dolores aut voluptatum, sequi doloribus ducimus nam ipsum minus beatae.</p>
+            <h1>Advanced Front-End Development project - LifeLine</h1>
+            <p class="brief_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sapiente odit sint, itaque vitae consectetur commodi voluptates vel inventore saepe, odio magnam illum voluptatem at totam labore cum pariatur! Autem maxime ea non natus blanditiis quisquam est minus. Earum sunt dolores aut voluptatum, sequi doloribus ducimus nam ipsum minus beatae.</p>
             <a href="#">Visit Website <i></i></a>
         </div>
         <div class="details_card">
@@ -93,19 +93,26 @@
         </div>
     </section>
 
-    <section class="more_projects">
-        <div id="moreProjects-carousel-container">
-            <div class="moreProjects_image-slider" id="moreProjects-image-list">
-                <img class="moreProjects-carousel-image" src="/imgs/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="More Projects Image 1">
-                <img class="moreProjects-carousel-image" src="/imgs/hal-gatewood-weRQAu9TA-A-unsplash.jpg" alt="More Projects Image 2">
-                <img class="moreProjects-carousel-image" src="/imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="More Projects Image 3">
-                <!-- Add more images as needed -->
+    <section class="more_projects container">
+        <div>
+            <div class="moreProjects_title row">
+                <h3>More Projects</h3>
+                <div class="moreProjects_buttons">
+                    <div class="moreProjects_prev-arrow" id="moreProjects-prev-btn" onclick="changeMoreProjectsSlide(-1)"><img src="/imgs/arrow_forward.svg" alt=""></div>
+                    <div class="moreProjects_next-arrow" id="moreProjects-next-btn" onclick="changeMoreProjectsSlide(1)"><img class="arrow" src="/imgs/arrow_back.svg" alt=""></div>
+                </div>
             </div>
-
-            <div class="moreProjects_prev-arrow" id="moreProjects-prev-btn" onclick="changeMoreProjectsSlide(-1)"><img src="/imgs/arrow_forward.svg" alt=""></div>
-
-            <div class="moreProjects_next-arrow" id="moreProjects-next-btn" onclick="changeMoreProjectsSlide(1)"><img class="arrow" src="/imgs/arrow_back.svg" alt=""></div>
-
+        </div>
+        
+        <div class="moreProjects-carousel_overflow">
+            <div id="moreProjects-carousel-container">
+                <div class="moreProjects_image-slider" id="moreProjects-image-list">
+                    <img class="moreProjects-carousel-image" src="/imgs/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="More Projects Image 1">
+                    <img class="moreProjects-carousel-image" src="/imgs/hal-gatewood-weRQAu9TA-A-unsplash.jpg" alt="More Projects Image 2">
+                    <img class="moreProjects-carousel-image" src="/imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="More Projects Image 3">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
         </div>
     </section>
 

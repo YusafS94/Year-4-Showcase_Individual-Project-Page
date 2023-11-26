@@ -62,3 +62,6 @@ function changeMoreProjectsSlide(direction) {
 // Add event listeners for the previous and next buttons for the carousel with different prefix
 moreProjectsPrevButton.addEventListener('click', () => changeMoreProjectsSlide(-1));
 moreProjectsNextButton.addEventListener('click', () => changeMoreProjectsSlide(1));
+
+// Carousel moves to middle on page load
+window.addEventListener('load', () => changeMoreProjectsSlide(1));
