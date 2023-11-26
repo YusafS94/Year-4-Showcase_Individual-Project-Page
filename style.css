@@ -34,13 +34,14 @@ body {
     width: 50px;
 }
 
-/* Image carousel section */
+/* Project Images Carousel Section */
 .carousel {
     position: relative;
 }
 
 #carousel-container {
-    width: 80%;
+    /* width: 80%; */
+    height: 800px;
     margin: auto;
     overflow: hidden;
 }
@@ -71,7 +72,7 @@ body {
 .prev-arrow {
     position: absolute;
     top: 40%;
-    right: 10%;
+    right: 0%;
     background-color: white;
     border-radius: 30px;
     display: flex;
@@ -81,7 +82,7 @@ body {
 .next-arrow {
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 0%;
     background-color: white;
     border-radius: 30px;
     display: flex;
@@ -92,6 +93,67 @@ body {
     /* background-color: red;
     color: yellow; */
 }
+
+/* Breakdown */
+.breakdown {
+    padding: 3rem 4rem;
+}
+
+/* More Projects Carousel Section */
+
+#moreProjects-carousel-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#moreProjects-image-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.moreProjects-carousel-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+#moreProjects-prev-btn, #moreProjects-next-btn {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+.moreProjects_image-slider {
+    position: relative;
+    /* height: 400px; */
+}
+.moreProjects_prev-arrow {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.moreProjects_next-arrow {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .row {
