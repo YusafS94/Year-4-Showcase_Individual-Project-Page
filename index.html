@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Individual Project</title>
 </head>
 <body>
@@ -67,13 +68,15 @@
 
     <section class="carousel">
         <div id="carousel-container">
-            <div id="image-list">
-                <img src="#" alt="" class="carousel-image">
-                <img src="#" alt="" class="carousel-image">
-                <img src="#" alt="" class="carousel-image">
+            <div class="image-slider" id="image-list">
+                <img src="/imgs/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="" class="carousel-image">
+                <img src="/imgs/hal-gatewood-weRQAu9TA-A-unsplash.jpg" alt="" class="carousel-image">
+                <img src="/imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="" class="carousel-image">
             </div>
-            <button id="prev-btn" onclick="changeSlide(-1)">Previous</button>
-            <button id="next-btn" onclick="changeSlide(1)">Next</button>
+            
+            <div class="prev-arrow" id="prev-btn" onclick="changeSlide(-1)"><img src="/imgs/arrow_forward.svg" alt=""></div>
+
+            <div class="next-arrow" id="next-btn" onclick="changeSlide(1)"><img class="arrow" src="/imgs/arrow_back.svg" alt=""></div>
         </div>
     </section>
 
@@ -93,5 +96,8 @@
     <section class="more_projects"></section>
 
     <footer></footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
 .project_intro {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 100vh;
+    /* grid-template-rows: 100vh; */
 }
 
 /* Built with section */
@@ -34,6 +34,65 @@ body {
     width: 50px;
 }
 
+/* Image carousel section */
+.carousel {
+    position: relative;
+}
+
+#carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#image-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+#prev-btn, #next-btn {
+    cursor: pointer;
+    font-size: 20px;
+    /* background-color: #f2f2f2; */
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.image-slider {
+    position: relative;
+    /* height: 400px; */
+}
+.prev-arrow {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.next-arrow {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.arrow {
+    /* background-color: red;
+    color: yellow; */
+}
+
 @media screen and (max-width: 768px) {
     .row {
         flex-direction: column;
@@ -44,5 +103,14 @@ body {
     .project_intro {
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .built_with {
+        /* flex-direction: column; */
+    }
+    .logos {
+        flex-direction: column;
     }
 }
