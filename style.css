@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project_intro {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .container {
+        width: 90%;
+    }
+    .project_intro {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+}
