@@ -94,15 +94,9 @@ body {
     justify-content: center;
     padding: 0;
 }
-.arrow {
-    /* background-color: red;
-    color: yellow; */
-}
+
 
 /* Breakdown */
-.breakdown {
-    /* padding: 3rem 4rem; */
-}
 
 /* More Projects Carousel Section */
 
@@ -187,9 +181,6 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-    .built_with {
-        /* flex-direction: column; */
-    }
     .logos {
         flex-direction: column;
     }
