@@ -19,6 +19,21 @@ body {
     grid-template-rows: 100vh;
 }
 
+/* Built with section */
+.built_with {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.skill_logos {
+    width: 50px;
+}
+
 @media screen and (max-width: 768px) {
     .row {
         flex-direction: column;
